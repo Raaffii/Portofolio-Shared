@@ -1,0 +1,230 @@
+
+.swagy-hello{
+    font-family: "Caveat", cursive;
+    z-index: 30;
+    position: relative;
+    font-size: 1em;
+    color: #C99A00;
+}
+
+.contact__input:disabled {
+    background-color: #e0e0e0; /* Warna latar belakang abu-abu */
+    color: #a1a1a1; /* Warna teks abu-abu */
+    cursor: not-allowed; /* Menampilkan cursor seperti "tidak diizinkan" */
+  }
+
+.introduce{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.swagy-job{
+    z-index: 2;
+    font-family: "Caveat", cursive;
+    position: relative;
+  top: 1.8rem;
+  color: #C99A00;
+}
+
+.noswagy-name{
+    z-index: 1;
+    top: 1rem;
+    position: absolute;
+    font-size: 4rem; 
+}
+
+.swagy{
+    font-family: "Caveat", cursive;
+    color: #C99A00;
+    bottom: 11px;
+    left: -5px;
+    position: absolute;
+    z-index: 2;
+}
+
+.noswagy{
+    top: 10px;
+}
+
+.meabsolute{
+    position: absolute;
+}
+
+.swagy-font-back{
+    position: relative;
+    z-index: -1;
+    right: 2rem;
+    top: 0.5rem;
+    font-family: "Caveat", cursive;
+    color: #C99A00;
+}
+
+.swagy-font-front{
+    position: relative;
+    z-index: 2;
+    right: 6rem;
+    top: -1rem;
+    font-size: 1.3rem;
+    font-family: "Caveat", cursive;
+    color: #C99A00;
+}
+
+.skill__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Ini akan memusatkan gambar secara horizontal */
+    align-items: center; /* Ini akan memusatkan gambar secara vertikal jika diperlukan */
+}
+
+.skill__img {
+    margin: 10px; /* Berikan jarak antar gambar */
+    width: 15rem;
+}
+
+.swagyrelative{
+    font-family: "Caveat", cursive;
+    color: #C99A00;
+    font-size: 2em;
+}
+
+
+
+.work-info{
+    padding: 0;
+    margin: 0 0 20px 10px;
+}
+  
+  .work-info {
+
+      /* Batas hanya satu baris */
+    text-overflow: ellipsis;   /* Tampilkan '...' saat teks dipotong */
+    max-height: 3em;           /* Batas tinggi untuk dua baris (ubah sesuai kebutuhan) */
+    transition: all 0.3s ease; /* Animasi transisi */
+  }
+  
+  .work__img:hover .work-info {
+    overflow: visible;
+    white-space: normal;       /* Mengubah ke multi-baris */
+    max-height: 20em;          /* Tampilkan seluruh teks */
+  }
+
+
+.pengalaman-kerja{
+    margin: 0rem 20rem 0 20rem ;
+    display: flex;
+    justify-content: left;
+}
+
+.list-kerja{
+   margin-right: 10rem
+}
+
+  .info-kerja {
+    border-left: black solid 1px; /* Hanya membuat border di sisi kiri */
+    margin: 0 10px; /* Atur jarak kiri dan kanan */
+    padding-left: 20px;
+}
+
+.perusahaan{
+    padding: 0px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .swagy-font-front{
+        position: relative;
+        z-index: 2;
+        right: 4rem;
+        top: -0.6rem;
+        font-size: 1.3rem;
+        font-family: "Caveat", cursive;
+        color: #C99A00;
+    }
+    
+}
+
+
+/* Modal background */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* transparan hitam */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Konten modal */
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* Agar tombol silang diatur dengan benar */
+  }
+  
+  /* Tombol silang (X) */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* Modal.css */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: gray;
+  }
+  
+  .close-button:hover {
+    color: black;
+  }
+
+  .ok-button {
+    border-radius: 20px;
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ok-button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+  }

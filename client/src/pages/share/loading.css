@@ -1,0 +1,24 @@
+.Loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem;
+    gap: 1rem;
+  }
+
+  /* Animasi berputar */
+  .fa-spinner {
+    font-size: 50px;
+    animation: spin 1s linear infinite;
+    color: #3E6FF4;
+  }
+
+  /* Definisikan animasi berputar */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,167 @@
+  /*Tombol AI tanya */
+
+  .scroll-btn {
+    position: fixed;
+    bottom: 20px;  /* Menjaga tombol tetap 20px dari bawah */
+    right: 20px;   /* Menjaga tombol tetap 20px dari kanan */
+    padding: 10px 15px;
+    background-color: #000000; /* Warna latar belakang tombol */
+    color: white;  /* Warna teks */
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 6; 
+    
+  }
+  
+  .scroll-btn:hover {
+    background-color: #0056b3; /* Warna saat tombol di-hover */
+  }
+
+  /* Card  AI*/
+/* Card di kanan bawah */
+.card {
+    position: fixed;
+    bottom: 20px;  /* Menjaga card tetap 20px dari bawah */
+    right: 20px;   /* Menjaga card tetap 20px dari kanan */
+    background-color: #ffffff; /* Warna latar belakang card */
+    border: 1px solid #ddd;    /* Batas card */
+    border-radius: 8px;        /* Sudut membulat */
+    width: 350px;              /* Lebar card */
+    padding: 20px;             /* Jarak di dalam card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan untuk efek 3D */
+    font-family: Arial, sans-serif;
+    z-index: 1000; /* Pastikan card tetap di atas konten lain */
+    display: flex;
+    flex-direction: column; /* Pastikan elemen-elemen dalam card disusun secara vertikal */
+    max-height: 700px;
+  }
+  
+  /* Judul dan konten card */
+  .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin-bottom: 10px;  /* Memberikan jarak antara teks dan input */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Input berada di bawah teks */
+  .card input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;  /* Input akan menyesuaikan lebar card */
+    margin-top: 10px;  /* Memberikan jarak antara teks dan input */
+    border-radius: 4px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Tombol X untuk menutup card */
+  .close-btn {
+    position: absolute; /* Tombol posisinya akan tetap di kanan atas card */
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    color: #333;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  /* Efek hover pada tombol X */
+  .close-btn:hover {
+    color: #f44336; /* Merah saat hover */
+  }
+  
+  prompt-text{
+    display: flex;
+  }
+  
+
+  .prompt-container {
+    display: flex;
+    align-items: flex-start; /* Vertikal rata atas */
+  }
+  
+  .r-label {
+    margin-right: 10px; /* Jarak antara "R :" dan prompt */
+    font-weight: bold; /* Agar "R :" terlihat lebih menonjol */
+    padding: 1rem;
+    margin: 0;
+  }
+  
+  .prompt-text {
+    max-width: 600px; /* Membatasi lebar teks jika perlu */
+    line-height: 1.5;
+  }
+  
+  form{
+    display: flex;
+    justify-content: center;
+  }
+  input{
+    margin: 0.5rem;
+  }
+  
+  .right-container img {
+    margin: 0;      /* Menghapus margin di sekitar gambar */
+    padding: 0;     /* Menghapus padding di sekitar gambar */
+    display: block; /* Menghapus jarak kosong di bawah gambar (secara default img adalah inline) */
+    margin-left: 10px;
+  }
+
+  .right-container{
+    text-align:justify
+  }
+
+  .left-container{
+    text-align:justify
+  }
+
+  .left-container img {
+    margin: 0;      /* Menghapus margin di sekitar gambar */
+    padding: 0;     /* Menghapus padding di sekitar gambar */
+    display: block; /* Menghapus jarak kosong di bawah gambar (secara default img adalah inline) */
+    margin-bottom: 20px;
+    margin-right: 10px;
+  }
+
+  .div-form{
+    display: flex;
+  }
+
+  form{
+    display: inline-block;
+  }
+
+  form input{
+    padding: 0;
+    margin: 0;
+  }
+
+  button{
+    margin-top: 10px;
+  }
+
+  
+  .klikask {
+    background-color: #e0e0e0;  /* Warna latar belakang tombol */
+    border: none;  /* Menghapus border default */
+    border-radius: 8px;  /* Memberikan sudut yang lebih bulat */
+    padding: 5px 10px;  /* Memberikan padding di dalam tombol */
+    margin: 2px;
+    font-weight: bold;  /* Menebalkan teks */
+    color: #333;  /* Warna teks tombol */
+    cursor: pointer;  /* Menunjukkan bahwa ini adalah tombol yang bisa diklik */
+    transition: all 0.3s ease;  /* Menambahkan transisi halus saat efek hover */
+  }
+  
+
+
+  
