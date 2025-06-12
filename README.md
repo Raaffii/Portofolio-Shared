@@ -6,3 +6,9 @@ This is the same portfolio code that I previously shared. However, I did not hos
 
 - node js, tailwind, express js, react js, mongo db
 - API Integration (secured via `.env`)
+
+## Detail
+- **MongoDB** – Data storage (optional: user submissions, writing history)
+- **Express.js** – Backend framework
+- **React.js** – Frontend UI
+- **Node.js** – Runtime environment
